@@ -3,13 +3,13 @@ Open JTalkを用いてテキストを音声合成するプログラム
 
 # Install
 ```
-$ git clone https://github.com/social-robotics-lab/openjtalk.git
-$ cd openjtalk
-$ docker build -t openjtalk .
+git clone https://github.com/social-robotics-lab/openjtalk.git
+cd openjtalk
+docker build -t openjtalk .
 ```
 
 # Run
 ```
-$ docker run -it --name openjtalk --mount type=bind,source="$(pwd)"/src,target=/tmp openjtalk /bin/bash
-$ python sample.py
+docker run -it --name openjtalk --mount type=bind,source="$(pwd)"/src,target=/tmp openjtalk /bin/bash
+python sample.py
 ```
