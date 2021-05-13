@@ -10,6 +10,6 @@ docker build -t openjtalk .
 
 # Run
 ```
-docker run -it --name openjtalk --mount type=bind,source="$(pwd)"/src,target=/tmp openjtalk /bin/bash
+docker run -it --name openjtalk --mount type=bind,source="$(pwd)"/src,target=/tmp --rm openjtalk /bin/bash
 python sample.py
 ```
